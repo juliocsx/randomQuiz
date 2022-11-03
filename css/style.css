@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgb(113, 253, 108), rgb(195, 252, 188));
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #00801c;
+    min-height: 100vh;
+    min-width: 30vw;
+    max-width: 30vw;
+}
+
+h1 {
+    padding: 20px 20px 10px 20px;
+    color: rgb(228, 228, 228);
+}
+
+p {
+    padding: 20px;
+    color: rgb(228, 228, 228);
+    line-height: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+li {
+    margin: 15px;
+}
+
+#clear {
+    background-color: rgb(252, 121, 121);
+}
+
+button {
+    color: #ffffff;
+    background-color: #05ac29;
+    font-size: 19px;
+    border: 1px solid #05ac29;
+    padding: 15px 50px;
+    cursor: pointer;
+    max-width: 400px;
+    max-height: 100px;
+    min-width: 400px;
+    min-height: 100px;
+    border-radius: 8px;
+    transition: .5s;
+}
+button:hover {
+    color: #05ac29;
+    background-color: #ffffff;
+}
+
+#startdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 70vw;
+}
+
+#start {
+    font-size: 40px;
+}
+
+#quizContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 70vw;
+}
+
+#counter {
+    background-color: #2d63c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#question {
+    background-color: white;
+    max-width: 800px;
+    min-width: 490px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    padding: 15px;
+    font-size: 30px;
+}
+
+/* animation */
+
+#question {
+    animation: fromTop .7s .4s backwards;
+}
+
+#startdiv {
+    animation: fromTop .3s .4s backwards;
+}
+
+button:nth-child(1) {
+    animation-delay: 0.9;
+    animation: fromBottom 2s .4s backwards;
+}
+
+button:hover {
+    transform: scale(1.02)
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
