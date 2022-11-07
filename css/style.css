@@ -8,15 +8,6 @@ body {
     background-image: linear-gradient(rgb(113, 253, 108), rgb(195, 252, 188));
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: #00801c;
-    min-height: 100vh;
-    min-width: 30vw;
-    max-width: 30vw;
-}
-
 h1 {
     padding: 20px 20px 10px 20px;
     color: rgb(228, 228, 228);
@@ -68,8 +59,8 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    min-width: 70vw;
+    min-height: 90vh;
+    min-width: 100vw;
 }
 
 #start {
@@ -81,8 +72,8 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    min-width: 70vw;
+    min-height: 90vh;
+    min-width: 100vw;
 }
 
 #counter {
