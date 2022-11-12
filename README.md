@@ -20,8 +20,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🔖 To-do List
 
 - Adicionar contador de pontuação para os acertos em sequência (pontuação atual e recorde) ❗
-- Adicionar botôes de Tentar novamente(em caso de erro) e continuar(em caso de acerto) ‼️​
-- Adicionar GIFs diferentes em caso de erro ou acerto ❗
+- Adicionar botão de Tentar novamente ✔️
+- Adicionar GIFs diferentes em caso de erro ou acerto ✔️
 - Conectar o API usando fetch e mostrar perguntas em tela ✔️
 
 ---
